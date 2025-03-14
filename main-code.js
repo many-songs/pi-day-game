@@ -74,7 +74,7 @@ function countPeices(){
         }
     }
     peicesCount=((cutCount*cutCount+cutCount+2)/2)-outsideIntesectionCount
-    peices.textContent=peicesCount/(peicesCount+outsideIntesectionCount)+"% of a perfect score"
+    peices.textContent=floor((peicesCount/(peicesCount+outsideIntesectionCount))*100)+"% of a perfect score"
 
 }
 function mouseMoveHandler(e) {
