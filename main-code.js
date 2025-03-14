@@ -75,7 +75,7 @@ function countPeices(){
     }
     let ideal=((cutCount*cutCount+cutCount+2)/2)
     peicesCount=((cutCount*cutCount+cutCount+2)/2)-outsideIntesectionCount
-    peices.textContent=floor((peicesCount/ideal)*100)+"% of a perfect score"
+    peices.textContent=Math.floor((peicesCount/ideal)*100)+"% of a perfect score"
 
 }
 function mouseMoveHandler(e) {
